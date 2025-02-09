@@ -14,19 +14,19 @@ import {
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-green-100 to-white">
       {/* Hero Section */}
       <header className="container mx-auto px-6 py-16">
         <nav className="flex justify-between items-center mb-16">
           <div className="flex items-center space-x-2">
-            <HeartPulse className="h-8 w-8 text-blue-600" />
+            <HeartPulse className="h-8 w-8 text-green-600" />
             <span className="text-2xl font-bold text-gray-800">WellNexus.AI</span>
           </div>
           <div className="space-x-8">
             <button className="text-gray-600 hover:text-blue-600">About</button>
             <button className="text-gray-600 hover:text-blue-600">Services</button>
             <button className="text-gray-600 hover:text-blue-600">Contact</button>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
+            <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">
               Get Started
             </button>
           </div>
@@ -41,7 +41,7 @@ function App() {
               Make smarter health choices with our privacy-focused federated AI, delivering accurate risk assessments and real-time support.
             </p>
             <div className="flex space-x-5">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg border border-gray-200 hover:shadow-xl group transition-all duration-300 flex items-center">
+              <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg border border-gray-200 hover:shadow-xl group transition-all duration-300 flex items-center">
                 Ask AI
               </button>
               <button className="bg-white text-black px-8 py-3 rounded-full text-lg font-semibold shadow-lg border border-gray-200 hover:shadow-xl group transition-all duration-300 flex items-center">
@@ -109,17 +109,17 @@ function App() {
           </h2>
           <div className="grid grid-cols-3 gap-12">
             <FeatureCard
-              icon={<Shield className="h-8 w-8 text-blue-600" />}
+              icon={<Shield className="h-8 w-8 text-green-600" />}
               title="Privacy-First Approach"
               description="Your health data stays on your device. Our federated learning system ensures complete privacy while delivering accurate predictions."
             />
             <FeatureCard
-              icon={<Brain className="h-8 w-8 text-blue-600" />}
+              icon={<Brain className="h-8 w-8 text-green-600" />}
               title="AI-Powered Analysis"
               description="Advanced machine learning algorithms analyze symptoms and provide personalized health risk assessments."
             />
             <FeatureCard
-              icon={<MessageSquareText className="h-8 w-8 text-blue-600" />}
+              icon={<MessageSquareText className="h-8 w-8 text-green-600" />}
               title="24/7 Doctor Support"
               description="Connect with healthcare professionals in real-time for expert guidance and consultation."
             />
@@ -138,32 +138,32 @@ function App() {
               number="1"
               title="Enter Symptoms"
               description="Input your symptoms and health concerns securely"
-              icon={<AlertCircle className="h-6 w-6 text-blue-600" />}
+              icon={<AlertCircle className="h-6 w-6 text-green-600" />}
             />
             <Step
               number="2"
               title="AI Analysis"
               description="Our AI processes your data locally for privacy"
-              icon={<Activity className="h-6 w-6 text-blue-600" />}
+              icon={<Activity className="h-6 w-6 text-green-600" />}
             />
             <Step
               number="3"
               title="Get Insights"
               description="Receive personalized health risk assessment"
-              icon={<CheckCircle2 className="h-6 w-6 text-blue-600" />}
+              icon={<CheckCircle2 className="h-6 w-6 text-green-600" />}
             />
             <Step
               number="4"
               title="Expert Support"
               description="Connect with doctors for professional advice"
-              icon={<UserRound className="h-6 w-6 text-blue-600" />}
+              icon={<UserRound className="h-6 w-6 text-green-600" />}
             />
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-blue-600 text-white py-20">
+      <section className="bg-green-500 text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-8">
             Take Control of Your Health Today
@@ -172,7 +172,7 @@ function App() {
             Join thousands of users who trust HealthGuard AI for their health risk assessment needs.
             Your privacy is our priority.
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
+          <button className="bg-white text-green-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
             Start Free Assessment
           </button>
         </div>
@@ -214,7 +214,7 @@ function FeatureCard({ icon, title, description }) {
 function Step({ number, title, description, icon }) {
   return (
     <div className="text-center">
-      <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
         {icon}
       </div>
       <div className="text-xl font-semibold text-gray-900 mb-2">{title}</div>
